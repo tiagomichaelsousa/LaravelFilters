@@ -6,7 +6,7 @@
     <img src="https://img.shields.io/packagist/v/tiagomichaelsousa/laravelfilters.svg?style=flat-square" alt="Packagist Version">
     <img src="https://img.shields.io/packagist/dt/tiagomichaelsousa/laravelfilters.svg?style=flat-square" alt="Packagist Downloads">
     <img src="https://img.shields.io/travis/tiagomichaelsousa/laravelfilters/master.svg?style=flat-square" alt="Build Status">
-    <img src="https://github.styleci.io/repos/236964942/shield" alt="Style Status">
+    <img src="https://github.styleci.io/repos/240133579/shield" alt="Style Status">
     <img src="https://poser.pugx.org/tiagomichaelsousa/laravelfilters/license?format=flat-square" alt="Licence">
 </p>
 
@@ -196,10 +196,10 @@ Please see the [code of conduct](code_of_conduct.md) for more information.
 [ico-version]: https://img.shields.io/packagist/v/tiagomichaelsousa/laravelfilters.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/tiagomichaelsousa/laravelfilters.svg?style=flat-square
 [ico-travis]: https://img.shields.io/travis/tiagomichaelsousa/laravelfilters/master.svg?style=flat-square
-[ico-styleci]: https://github.styleci.io/repos/236964942/shield
+[ico-styleci]: https://github.styleci.io/repos/240133579/shield
 [link-packagist]: https://packagist.org/packages/tiagomichaelsousa/laravelfilters
 [link-downloads]: https://packagist.org/packages/tiagomichaelsousa/laravelfilters
 [link-travis]: https://travis-ci.org/tiagomichaelsousa/laravelfilters
-[link-styleci]: https://styleci.io/repos/236964942
+[link-styleci]: https://styleci.io/repos/240133579
 [link-author]: https://github.com/tiagomichaelsousa
 [link-contributors]: ../../contributors
