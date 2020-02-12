@@ -2,8 +2,8 @@
 
 namespace tiagomichaelsousa\LaravelFilters;
 
-use Illuminate\Http\Request;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Http\Request;
 
 abstract class QueryFilters
 {
@@ -13,7 +13,7 @@ abstract class QueryFilters
      * @var Request
      */
     protected $request;
-    
+
     /**
      * The builder instance.
      *
@@ -45,7 +45,7 @@ abstract class QueryFilters
             if (! method_exists($this, $filter)) {
                 continue;
             }
-            
+
             strlen($value) ? $this->$filter($value) : $this->$filter();
         }
 

@@ -8,12 +8,12 @@ use tiagomichaelsousa\LaravelFilters\Commands\NewFilterCommand;
 class LaravelFiltersServiceProvider extends ServiceProvider
 {
     /**
-    * The console commands.
-    *
-    * @var array
-    */
+     * The console commands.
+     *
+     * @var array
+     */
     protected $commands = [
-        NewFilterCommand::class
+        NewFilterCommand::class,
     ];
 
     /**

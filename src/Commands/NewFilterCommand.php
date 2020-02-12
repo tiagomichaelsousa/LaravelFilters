@@ -4,11 +4,9 @@ namespace tiagomichaelsousa\LaravelFilters\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
-use tiagomichaelsousa\LaravelFilters\Exceptions\File as FileException;
 
 class NewFilterCommand extends Command
 {
-   
     /**
      * The name and signature of the console command.
      *
@@ -25,24 +23,24 @@ class NewFilterCommand extends Command
     protected $description = 'Create a new filter for eloquent model';
 
     /**
-    * The name of the filter class.
-    *
-    * @var array
-    */
+     * The name of the filter class.
+     *
+     * @var array
+     */
     private $class;
-    
+
     /**
-    * The success exit code.
-    *
-    * @var int
-    */
+     * The success exit code.
+     *
+     * @var int
+     */
     public const EXIT_CODE_SUCCESS = 1;
 
     /**
-    * The error exit code.
-    *
-    * @var int
-    */
+     * The error exit code.
+     *
+     * @var int
+     */
     public const EXIT_CODE_ERROR = -1;
 
     /**
@@ -64,24 +62,24 @@ class NewFilterCommand extends Command
         }
 
         $this->directoryExists($directory);
-        
+
         $replaces = $this->replacements();
         $stub = str_replace(array_keys($replaces), array_values($replaces), $this->getStub());
 
         file_put_contents($path, $stub);
-        
+
         $this->line('');
-        $this->info("Filter created successfully 🚀");
+        $this->info('Filter created successfully 🚀');
 
         return self::EXIT_CODE_SUCCESS;
     }
 
     /**
-    * Verify if the directory and create one if it doesn't.
-    *
-    * @param string $path
-    * @return bool
-    */
+     * Verify if the directory and create one if it doesn't.
+     *
+     * @param string $path
+     * @return bool
+     */
     private function directoryExists(string $path)
     {
         return (bool) File::isDirectory($path) ?: File::makeDirectory($path);
@@ -98,7 +96,6 @@ class NewFilterCommand extends Command
         return base_path(lcfirst(str_replace('\\', '/', $path)));
     }
 
-
     /**
      * Get the Stub for the request.
      *
@@ -108,7 +105,7 @@ class NewFilterCommand extends Command
     {
         return File::get(__DIR__.'/../Stubs/filter.stub');
     }
-    
+
     /**
      * Get the replacements for the stub.
      *
