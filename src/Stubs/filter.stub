@@ -1,0 +1,19 @@
+<?php
+
+namespace {{NAMESPACE}};
+
+use tiagomichaelsousa\LaravelFilters\QueryFilters;
+
+class {{CLASS_NAME}} extends QueryFilters
+{
+    /**
+     * Search all.
+     *
+     * @param  string  $query
+     * @return Builder
+     */
+    public function search($value = '')
+    {
+        return $this->builder->where('name', 'like', '%' . $value . '%');
+    }
+}
