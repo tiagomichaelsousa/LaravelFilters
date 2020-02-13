@@ -1,7 +1,4 @@
 <p align="center">
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
     <img src="./docs/logo.png" alt="Laravel Filters">
 </p>
 
@@ -11,6 +8,7 @@
     <img src="https://img.shields.io/travis/tiagomichaelsousa/laravelfilters/master.svg?style=flat-square" alt="Build Status">
     <img src="https://github.styleci.io/repos/240133579/shield" alt="Style Status">
     <img src="https://poser.pugx.org/tiagomichaelsousa/laravelfilters/license?format=flat-square" alt="Licence">
+    <img src="https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square" alt="All Contributors">
 </p>
 
 ---
@@ -222,6 +220,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
