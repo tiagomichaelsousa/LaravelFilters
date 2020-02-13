@@ -13,7 +13,7 @@
 ---
 
 Laravel Filters is a package based in a [Laracasts](https://laracasts.com/) video made by [JeffreyWay](https://github.com/JeffreyWay).
-This package allows to to filter eloquent models in a clean and simple way.
+This package allows to filter eloquent models in a clean and simple way.
 
 ## Installation
 
