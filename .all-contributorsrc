@@ -1,0 +1,27 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "tiagomichaelsousa",
+      "name": "tiagomichaelsousa",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/28356381?v=4",
+      "profile": "https://github.com/tiagomichaelsousa",
+      "contributions": [
+        "code",
+        "doc",
+        "content",
+        "review"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "LaravelFilters",
+  "projectOwner": "tiagomichaelsousa",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
