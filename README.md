@@ -61,7 +61,7 @@ The `resolve()` method works like an helper. It verifies if the request has the 
 
 ## Creating your Filters
 
-When you make the request to an endpoint the `QueryFilter` class (that `UserFilter` extends from) verifies if there is any method with the name that you sent in the request query string.
+When you make the request to an endpoint the `QueryFilter` class (that `UserFilters` extends from) verifies if there is any method with the name that you sent in the request query string.
 
 The `php artisan make:filter <name>` comes with a default method search that you can delete if you want. When you make a request to `/api/users?search=Foobar` the `QueryFilter` class will call the search method because the key `search` its present both in the request and in the `UserFilters` class.
 
