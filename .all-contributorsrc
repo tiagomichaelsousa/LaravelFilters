@@ -16,6 +16,15 @@
         "content",
         "review"
       ]
+    },
+    {
+      "login": "RafaelFerreiraTVD",
+      "name": "Rafael Ferreira",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/15105462?v=4",
+      "profile": "http://www.xgeeks.io",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
