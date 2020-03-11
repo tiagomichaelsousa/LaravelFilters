@@ -55,7 +55,7 @@ class User extends Authenticatable
 }
 ```
 
-The `filter()` receives the query builder and the instance of the class responsible for the filter methods.
+The `filter()` method receives the query builder and the instance of the class responsible for the filter methods.
 
 The `resolve()` method works like an helper. It verifies if the request has the query string `paginate=x` and if its present it return the response with pagination, otherwise it will return the data.
 
@@ -63,7 +63,7 @@ The `resolve()` method works like an helper. It verifies if the request has the 
 
 When you make the request to an endpoint the `QueryFilter` class (that `UserFilters` extends from) verifies if there is any method with the name that you sent in the request query string.
 
-The `php artisan make:filter <name>` comes with a default method search that you can delete if you want. When you make a request to `/api/users?search=Foobar` the `QueryFilter` class will call the search method because the key `search` its present both in the request and in the `UserFilters` class.
+The `php artisan make:filter <name>` comes with a default search method that you can delete if you want. When you make a request to `/api/users?search=Foobar` the `QueryFilter` class will call the search method because the key `search` is present in both the request and `UserFilters` class.
 
 ```php
 use tiagomichaelsousa\LaravelFilters\QueryFilters;
@@ -83,7 +83,7 @@ class UserFilters extends QueryFilters
 }
 ```
 
-The search method applies the queries to the builder instance. With that said you can combine multiple clauses. For example, if you want that the search method filter the data from the `name` and `last_name`fields on the db just add the `orWhere` clause.
+The search method applies the queries to the builder instance. With that said you can combine multiple clauses. For example, if you want the search method to filter the data from the `name` and `last_name` fields on the db just add the `orWhere` clause.
 
 ```php
 /**
@@ -100,7 +100,7 @@ public function search($value = '')
 }
 ```
 
-If you want to add more filters, just add a new method to the class, put the logic for the filter and sent it trough the request query string.
+If you want to add more filters, just add a new method to the class, put the logic for the filter and send it trough the request query string.
 
 You can also filter data through eloquent relationships. For example, filter users from a country_code `/api/users?country=PT`
 
@@ -138,7 +138,7 @@ class UserControllerAPI extends Controller
     }
 ```
 
-The `filter()` method can be called in every instance of a model that uses the `Filterable` Trait. So imagine that you have a model Meeting and these Meeting has many users. You can filter the users from the Meeting this way:
+The `filter()` method can be called in every instance of a model that uses the `Filterable` Trait. So imagine that you have a model Meeting and this Meeting has many users. You can filter the users from the Meeting this way:
 
 ```php
 class MeetingUsersControllerAPI extends Controller
