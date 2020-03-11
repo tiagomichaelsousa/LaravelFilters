@@ -25,6 +25,18 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "FFY00",
+      "name": "Filipe Laíns",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/11718923?v=4",
+      "profile": "https://twitter.com/MissingClara",
+      "contributions": [
+        "code",
+        "doc",
+        "content",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
