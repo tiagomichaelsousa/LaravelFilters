@@ -46,7 +46,7 @@ abstract class QueryFilters
                 continue;
             }
 
-            strlen($value) ? $this->$filter($value) : $this->$filter();
+            $this->$filter($value);
         }
 
         return $this->builder;

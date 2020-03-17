@@ -18,8 +18,9 @@ abstract class TestCase extends Orchestra
         ['name' => 'John', 'last_name' => 'Doe'],
         ['name' => 'Jane', 'last_name' => 'Doe'],
         ['name' => 'Foo', 'last_name' => 'Bar'],
+        ['name' => 'Foo', 'last_name' => null],
     ];
- 
+
     /**
      * Setup the test environment.
      *
@@ -31,7 +32,7 @@ abstract class TestCase extends Orchestra
 
         $this->initialize();
     }
-    
+
     /**
      * Clean up the testing environment before the next test.
      *
@@ -42,7 +43,7 @@ abstract class TestCase extends Orchestra
         parent::tearDown();
     }
 
-    
+
     /**
     * Define environment setup.
     *
