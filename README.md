@@ -9,6 +9,8 @@
     <img src="https://github.styleci.io/repos/240133579/shield" alt="Style Status">
     <img src="https://poser.pugx.org/tiagomichaelsousa/laravelfilters/license?format=flat-square" alt="Licence">
     <img src="https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square" alt="All Contributors">
+    <img src="https://api.codacy.com/project/badge/Grade/162ae95848474ee7930c9496da21d078" alt="Code Quality">
+    <img src="https://api.codacy.com/project/badge/Coverage/162ae95848474ee7930c9496da21d078" alt="Code Coverage">
 </p>
 
 ---
