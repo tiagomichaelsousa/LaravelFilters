@@ -10,7 +10,7 @@ abstract class QueryFilters
     /**
      * The request object.
      *
-     * @var array
+     * @var Request|array
      */
     protected $request;
 
@@ -31,7 +31,7 @@ abstract class QueryFilters
         if(is_null($request)) {
             $request = request();
         }
-        $this->request = is_array($request) ? $request : (get_class($request) == Request::class ? $request->all() : []);
+        $this->request = $request;
     }
 
     /**
@@ -62,6 +62,6 @@ abstract class QueryFilters
      */
     public function filters()
     {
-        return $this->request;
+        return is_array($this->request) ? $this->request : (get_class($this->request) == Request::class ? $this->request->all() : []);
     }
 }
