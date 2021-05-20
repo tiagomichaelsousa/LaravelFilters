@@ -62,6 +62,6 @@ abstract class QueryFilters
      */
     public function filters()
     {
-        return is_array($this->request) ? $this->request : (get_class($this->request) == Request::class ? $this->request->all() : []);
+        return is_array($this->request) ? $this->request : (method_exists($this->request, 'all') ? $this->request->all() : []);
     }
 }
