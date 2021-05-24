@@ -28,7 +28,7 @@ abstract class QueryFilters
      */
     public function __construct($request = null)
     {
-        if(is_null($request)) {
+        if (is_null($request)) {
             $request = request();
         }
         $this->request = $request;
