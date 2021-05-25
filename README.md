@@ -159,6 +159,14 @@ class MeetingUsersControllerAPI extends Controller
     }
 ```
 
+A filter could be instantiated also by providing an associative array:
+
+```php
+
+$users = User::filter(new UserFilters(['search' => 'john']))->resolve();
+
+```
+
 ## Change log
 
 Please see the [changelog](changelog.md) for more information on what has changed recently.

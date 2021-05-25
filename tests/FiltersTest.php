@@ -88,4 +88,12 @@ class FiltersTest extends TestCase
         $this->assertTrue($response->original instanceof Collection);
         $this->assertEquals(1, count($payload));
     }
+
+    /** @test */
+    public function it_can_be_used_with_an_associative_array()
+    {
+        $users = User::filter(new UserFilters(['search' => 'john']))->resolve();
+
+        $this->assertEquals(1, count($users));
+    }
 }
