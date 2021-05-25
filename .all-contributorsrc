@@ -48,6 +48,16 @@
         "content",
         "review"
       ]
+    },
+    {
+      "login": "giannicic",
+      "name": "Gianni Ciccarelli",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10560238?v=4",
+      "profile": "https://github.com/giannicic",
+      "contributions": [
+        "code",
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 7,
