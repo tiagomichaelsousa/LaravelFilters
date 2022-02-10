@@ -10,8 +10,8 @@ trait Filterable
     /**
      * Filter a result set.
      *
-     * @param  Builder      $query
-     * @param  QueryFilters $filters
+     * @param  Builder  $query
+     * @param  QueryFilters  $filters
      * @return Builder
      */
     public function scopeFilter(Builder $query, QueryFilters $filters)
@@ -22,7 +22,7 @@ trait Filterable
     /**
      * Return all results or a paginator.
      *
-     * @param  Builder $query
+     * @param  Builder  $query
      * @return Builder
      */
     public function scopeResolve(Builder $query)

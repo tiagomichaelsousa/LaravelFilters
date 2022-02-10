@@ -77,7 +77,7 @@ class NewFilterCommand extends Command
     /**
      * Verify if the directory and create one if it doesn't.
      *
-     * @param string $path
+     * @param  string  $path
      * @return bool
      */
     private function directoryExists(string $path)
