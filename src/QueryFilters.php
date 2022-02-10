@@ -24,7 +24,7 @@ abstract class QueryFilters
     /**
      * Create a new QueryFilters instance.
      *
-     * @param Request|array $request
+     * @param  Request|array  $request
      */
     public function __construct($request = null)
     {
@@ -37,7 +37,7 @@ abstract class QueryFilters
     /**
      * Apply the filters to the builder.
      *
-     * @param  Builder $builder
+     * @param  Builder  $builder
      * @return Builder
      */
     public function apply(Builder $builder)
