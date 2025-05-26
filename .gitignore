@@ -8,3 +8,4 @@ composer.phar
 /report
 .DS_Store
 coverage.clover
+.phpunit.cache
