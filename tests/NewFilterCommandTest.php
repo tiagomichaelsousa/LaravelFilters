@@ -3,14 +3,14 @@
 namespace tiagomichaelsousa\LaravelFilters\Tests;
 
 use Illuminate\Support\Facades\File;
+use PHPUnit\Framework\Attributes\Test;
 use tiagomichaelsousa\LaravelFilters\Commands\NewFilterCommand;
 use tiagomichaelsousa\LaravelFilters\Exceptions\File as ExceptionsFile;
 use tiagomichaelsousa\LaravelFilters\Tests\TestCase;
 
 class NewFilterCommandTest extends TestCase
 {
-
-    /** @test */
+    #[Test]
     public function it_creates_the_filter_in_the_config_namespace()
     {
         $this->artisan('make:filter', ['name' => $class = 'UserFilter'])
@@ -21,7 +21,7 @@ class NewFilterCommandTest extends TestCase
         $this->assertFalse(File::exists(app_path("/{$class}.php")));
     }
 
-    /** @test */
+    #[Test]
     public function it_returns_an_exception_if_the_filter_already_exits()
     {
         $this->artisan('make:filter', ['name' => $class = 'UserFilter'])
